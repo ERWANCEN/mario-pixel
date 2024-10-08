@@ -1,0 +1,48 @@
+/* suppression de valeurs natives */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* mise en place de variables */
+:root {
+    --couleur-ciel: white;
+    --couleur-toit: orange;
+    --couleur-facade: blue;
+    --couleur-fenetres: red;
+    --hauteur-blocs: 50px;
+    --largeur-blocs: 50px;
+}
+
+/* disposition du tableau sur la page */
+table {
+    margin: auto;
+    margin-top:50px;
+    border-spacing: 0;
+}
+
+/* dimensions de chaque cellule du tableau */
+td {
+    width: var(--largeur-blocs);
+    height: var(--hauteur-blocs);
+}
+
+/* ========== */
+/* couleurs éléments */
+.ciel {
+    background-color: var(--couleur-ciel);
+}
+
+.toit {
+    background-color: var(--couleur-toit);
+}
+
+.facade {
+    background-color: var(--couleur-facade);
+}
+
+.fenetres {
+    background-color: var(--couleur-fenetres);
+}
+/* ========== */
